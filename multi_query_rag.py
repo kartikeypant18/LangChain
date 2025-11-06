@@ -1,3 +1,5 @@
+#task was to create a multi-query RAG system that can handle multiple documents and provide answers based on the combined context from those documents. 
+#approach involves loading multiple PDF files from a directory, splitting them into chunks, creating a vector store, and then using a retriever to fetch relevant chunks based on a user's question. Finally, it generates an answer using a language model.
 import os
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter

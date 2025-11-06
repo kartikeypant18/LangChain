@@ -1,3 +1,6 @@
+#task was to create a RAG system that can answer questions based on the content of a single PDF document.
+#approach involves loading a PDF file, splitting it into chunks, creating a vector store, and then using a retriever to fetch relevant chunks based on a user's question. Finally, it generates an answer using a language model.
+
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
